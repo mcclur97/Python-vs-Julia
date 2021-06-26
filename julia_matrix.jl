@@ -15,7 +15,7 @@ function matrix_create(n, m)
 end
 ## Running a for loop that iterates through different sized matrices
 julia_times = []
-for i in (100:100:3000)
+for i in (100:100:100000)
     a, b = matrix_create(i, i)
     c = @elapsed a * b
     append!(julia_times, c)
